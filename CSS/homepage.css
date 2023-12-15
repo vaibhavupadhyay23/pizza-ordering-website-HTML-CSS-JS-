@@ -13,7 +13,7 @@ body{
   scroll-behavior: smooth;
 }
 .nav-bar{
-  height: 10vh;
+  /* height: 10vh; */
   width: 100%;
   position: fixed;
   top: 0px;
@@ -25,14 +25,14 @@ body{
 .website-name{
   font-family: 'Caveat', cursive;
   font-weight: 700;
-  font-size: 6vh;
+  font-size: 3vw;
   margin: 0px 5vw;
 }
 .menu-items{
   display: flex;
   font-family: 'Poppins';
   font-weight: 600;
-  font-size: 3.5vh;
+  font-size: 2vw;
   justify-content: center;
   align-items: center;
   margin-right: 5vw;
@@ -45,7 +45,7 @@ body{
   display: flex;
   font-family: 'Whisper';
   font-weight: 600;
-  font-size: 6vh;
+  font-size: 3vw;
   justify-content: center;
   margin-right: 5vw;
 }
@@ -81,17 +81,17 @@ font-family: 'Poppins';
   justify-content: center;
 }
 .main-text-button{
-  padding: 2vh 8vw;
+  padding: 1vw 8vw;
   background-color: #cc7722;
   color: #F8F8FF;
   border: none;
   cursor: pointer;
-  font-size: 3vh;
+  font-size: 2vw;
   font-weight: 600;
   border-radius: 20px;
 }
 .menu-items-heading{
-  font-size: 10vh;
+font-size: 10vh;
 font-family: 'Whisper';
 font-weight: 700;
 display: flex;
@@ -108,7 +108,8 @@ justify-content: center;
 .menu-item-container{
   width: 300px;
   text-align: center;
-  height:420px;
+  padding: 25px;
+  /* height:420px; */
   background-color: #ffff;
   margin: 30px;
   border-radius: 20px;
@@ -119,7 +120,7 @@ justify-content: center;
   justify-content: center;
 }
 .item-image{
-  margin-top:25px;
+  /* margin-top:25px; */
   width: 250px;
   height: 250px;
   object-fit: cover;
@@ -156,4 +157,82 @@ justify-content: center;
   font-size: 2vh;
   font-weight: 600;
   border-radius: 20px;
+}
+.our-services-div{
+  background-color: #f26d01;
+  text-align: center;
+}
+.our-services-heading{
+  font-size: 3vw;
+  font-family: 'Poppins';
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+.our-services-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service{
+  background-color: #ffffff66;
+  margin: 1vw 3vw;
+  width: 15vw;
+  padding: 3vw;
+  border-radius: 20px;
+}
+.service-logo{
+  color: white;
+  height: 50px;
+  width: 50px;
+}
+.service-text{
+  font-size: 1vmax;
+  font-family: 'Poppins';
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+.reviews-div{
+  background-color: #f0ead2;
+  text-align: center;
+}
+.reviews-heading{
+  font-size: 3vw;
+  font-family: 'Poppins';
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+.reviews{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.review-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15vw;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffff;
+  margin: 20px;
+  border-radius: 20px;
+}
+.review-text{
+  font-family: 'Poppins';
+  color: rgb(46, 43, 43);
+  font-size: 1vw;
+}
+.review-stars{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+.review-customer{
+  font-family: 'Poppins';
+  font-weight: 800;
+  padding: 5px;
+  font-size: 1.2vw;
 }

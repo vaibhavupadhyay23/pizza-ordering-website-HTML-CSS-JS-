@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="CSS/homepage.css">
-</head>
-<body>
-  <nav class="nav-bar">
-    <div class="website-name">ProPizza <i data-lucide="pizza"></i></div>
-    <div class="menu-items">
-      <div>Home</div>
-      <div>Menu</div>
-      <div>About</div>
-    </div>
-    <div class="cart">
-      <div>Cart</div>
-    </div>
-  </nav>
-  <main>
-    <div class="main-top">
-      <div class="main-text">
-        <div class="main-text-heading">Simple and <br> Tasty Recepies</div>
-        <div class="main-text-subtext">We take locally sources ingredients and serve you the tasting and the most healthy pizza</div>
-        <div class="main-text-button-div">
-        <a href="#menu"><button class="main-text-button">Order Now</button></a>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProPizza-Genuine ingredients, Great Taste</title>
+    <link rel="stylesheet" href="CSS/homepage.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="website-name">ProPizza <i data-lucide="pizza"></i></div>
+      <div class="menu-items">
+        <div>Home</div>
+        <div>Menu</div>
+        <div>About</div>
       </div>
-      <div ><img class="main-image" src="images/main-image.jpg" alt=""></div>
+      <div class="cart">
+        <div>Cart</div>
+      </div>
+    </nav>
+    <main>
+      <div class="main-top">
+        <div class="main-text">
+          <div class="main-text-heading">
+            Simple and <br />
+            Tasty Recepies
+          </div>
+          <div class="main-text-subtext">
+            We take locally sources ingredients and serve you the tasting and
+            the most healthy pizza
+          </div>
+          <div class="main-text-button-div">
+            <a href="#menu"
+              ><button class="main-text-button">Order Now</button></a
+            >
+          </div>
+        </div>
+        <div><img class="main-image" src="images/main-image.jpg" alt="" /></div>
       </div>
       <div class="menu" id="menu">
-         <div class="menu-items-heading">Menu Items</div>
-         <div class="menu-items-list">
+        <div class="menu-items-heading">Menu Items</div>
+        <div class="menu-items-list">
           <!-- <div class="menu-item-container">
             <div class="item-image-div"><img class="item-image" src="images/main-image.jpg" alt="imagenotfound"></div>
             <div class="item-name">
@@ -41,16 +49,47 @@
             <div class="item-rating">⭐5</div>
             <button class="item-order-button">Order Now</button>
           </div> -->
-         </div>
+        </div>
       </div>
-  </main>
+      <div class="our-services-div">
+        <div class="our-services-heading">Our Services</div>
+        <div class="our-services-list">
+          <div class="service">
+            <div ><i class="service-logo" class="service-logo" data-lucide="truck"></i></div>
+            <div class="service-text">Express Delivery</div>
+          </div>
+          <div class="service">
+            <div ><i class="service-logo" data-lucide="utensils-crossed"></i></div>
+            <div class="service-text">30+ Restaurants</div>
+          </div>
+          <div class="service">
+            <div ><i class="service-logo" data-lucide="badge-percent"></i></div>
+            <div class="service-text">Discount System</div>
+          </div>
+          <div class="service">
+            <div ><i class="service-logo" data-lucide="smile-plus"></i></div>
+            <div class="service-text">Best Quality</div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-div">
+        <div class="reviews-heading">Words from our Customers</div>
+        <div class="reviews">
+            <!-- <div class="review-container">
+              <div class="review-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+              <div class="review-stars">⭐5 star</div>
+              <div class="review-customer">Vaibhav Upadhyay</div>
+            </div> -->
+        </div>
+      </div>
+    </main>
 
-
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    lucide.createIcons();
-  </script>
-  <script src="script/pizzaitems.js"></script>
-  <script src="script/homepage.js"></script>
-</body>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="script/pizzaitems.js"></script>
+    <script src="script/pizzareviews.js"></script>
+    <script src="script/homepage.js"></script>
+  </body>
 </html>
