@@ -3,14 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior:smooth;
 }
 body{
   width: 100%;
   height: 100%;
   background-color:#F8F8FF;
 }
-body{
-  scroll-behavior: smooth;
+a {
+  color:black;
 }
 .nav-bar{
   /* height: 10vh; */
@@ -27,6 +28,7 @@ body{
   font-weight: 700;
   font-size: 3vw;
   margin: 0px 5vw;
+  cursor: pointer;
 }
 .menu-items{
   display: flex;
@@ -236,4 +238,43 @@ justify-content: center;
   font-weight: 800;
   padding: 5px;
   font-size: 2.4vh;
+}
+footer {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color:#cc7722;
+}
+.website-name-footer{
+  font-family: 'Caveat', cursive;
+  font-weight: 800;
+  font-size: 6vw;
+  text-align: center;
+  padding: 2vw;
+  margin-right: 2vw;
+  background-color: #f0ead278;
+  border-radius: 20px;
+}
+.website-icon{
+  height: 150px;
+  width: 150px;
+}
+.footer-right-content{
+  font-family: 'Poppins';
+  margin-top: 2vh;
+  width: 70%;
+}
+.footer-right-content ul{
+  list-style: none;
+}
+
+.footer-right-content ul li{
+  opacity: .8;
+  margin-bottom: 1vh;
+}
+.footer-right-content ul li:nth-child(1){
+  margin-bottom:2vh ;
+  font-weight: 800;
+  font-size: 2vw;
+  opacity: 1;
 }
