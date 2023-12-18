@@ -80,3 +80,5 @@ const pizzaItems = [
       image:"images/meatlovers.jpg"
   }
 ]
+
+let cartQuantity=JSON.parse(localStorage.getItem('cartQuantity')) || [];

@@ -1,5 +1,8 @@
 menuItemsHTML();
 reviewsHTML();
+cartUpdate();
+
+console.log(cartQuantity.length);
 
 function menuItemsHTML() {
   let bodyelement = document.querySelector('.menu-items-list');
@@ -11,7 +14,7 @@ function menuItemsHTML() {
     </div>
     <div class="item-description">${pizzaitem.productDescription}</div>
     <div class="item-rating">⭐${pizzaitem.productRatings}</div>
-    <button class="item-order-button">Order Now</button>
+    <button class="item-order-button" onclick="cartUpdateQuantity(${pizzaitem.productId});">Order Now</button>
   </div>`
   });
  
@@ -30,3 +33,25 @@ function reviewsHTML() {
   });
  
 }
+
+function cartUpdate(){
+  let cartQuantityLength = cartQuantity.length;
+  cartQuantity = JSON.parse(localStorage.getItem('cartQuantity')) || 0;
+  let cartQuantityElement = document.querySelector('.cart-quantity');
+  if(cartQuantityLength){
+    cartQuantityElement.style.opacity=1;
+  }
+  cartQuantityElement.innerHTML=cartQuantityLength;
+
+}
+
+function cartUpdateQuantity(id){
+  cartQuantity = JSON.parse(localStorage.getItem('cartQuantity')) || [];
+  cartQuantity.push(id);
+  let cartQuantityElement = document.querySelector('.cart-quantity');
+  cartQuantityElement.innerHTML=cartQuantity;
+  localStorage.setItem('cartQuantity',JSON.stringify(cartQuantity));
+  cartUpdate();
+  console.log(cartQuantity);
+}
+

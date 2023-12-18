@@ -43,7 +43,27 @@ a {
   margin: 0px 4vw;
   cursor: pointer;
 }
-.cart div{
+.cart{
+  position: relative;
+  /* border: 1px solid black; */
+}
+.cart-quantity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#E50000;
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  border-radius:9999px;
+  color: #fff;
+  font-family: 'Poppins';
+  font-weight: 600;
+  top: 0;
+  left: 5.3vw;
+  opacity: 0;
+}
+.cart-text{
   display: flex;
   font-family: 'Whisper';
   font-weight: 600;
@@ -269,7 +289,7 @@ footer {
 }
 
 .footer-right-content ul li{
-  opacity: .8;
+  opacity: 1;
   margin-bottom: 1vh;
 }
 .footer-right-content ul li:nth-child(1){
