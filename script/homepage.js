@@ -14,6 +14,7 @@ function menuItemsHTML() {
     </div>
     <div class="item-description">${pizzaitem.productDescription}</div>
     <div class="item-rating">⭐${pizzaitem.productRatings}</div>
+    <div class="item-price">₹${pizzaitem.productPrice}</div>
     <button class="item-order-button" onclick="cartUpdateQuantity(${pizzaitem.productId});">Order Now</button>
   </div>`
   });

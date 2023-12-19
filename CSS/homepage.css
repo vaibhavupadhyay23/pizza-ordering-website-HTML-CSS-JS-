@@ -70,6 +70,7 @@ a {
   font-size: 3vw;
   justify-content: center;
   margin-right: 5vw;
+  cursor: pointer;
 }
 .main-top{
   justify-content: space-between;
@@ -162,7 +163,8 @@ justify-content: center;
   display: flex;
   justify-content: center;
 }
-.item-rating{
+.item-rating,
+.item-price{
   font-size: 2vh;
   text-align: center;
   font-weight: 800;
@@ -297,4 +299,96 @@ footer {
   font-weight: 800;
   font-size: 2vw;
   opacity: 1;
+}
+.cart-box{
+  text-align: center;
+  position: fixed;
+  height: 100vh;
+  right: 0px;
+  width: 30vw;
+  opacity: 0;
+  background-color: #f0ead2;
+  border-radius: 20px;
+  transition: opacity 1s;
+}
+.cart-box-heading,
+.cart-box-elements-item-name{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 1.5vw;
+  margin-top: 1vh;
+}
+.cart-box-elements{
+  margin-top: 2vh;
+  max-height: 50%;
+  background-color: whitesmoke;
+}
+.cart-box-elements-item{
+  display: flex;
+  align-items: center;
+  height: 150px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+}
+.cart-box-elements-item-image{
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-left: 1vw;
+} 
+.cart-box-elements-item-itemdetails{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100%;
+}
+.cart-box-elements-item-name{
+  font-size: 1.2vw;
+}
+.cart-box-elements-item-price,
+.cart-box-elements-item-quantity{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: .8vw;
+  margin-top: .5vh;
+  color: gray;
+  text-align: start;
+  margin-left: 1vw;
+}
+
+.cart-box-elements-item-finalamount{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.cart-item-finalprice{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 1.3vw;
+  margin-left: 1vw;
+  margin-top: 1vh;
+  width: 100%;
+}
+.cart-item-remove{
+  width: 8vw;
+  padding: 1vh 0;
+  background-color: #cc7722;
+  color: #F8F8FF;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-bottom: 1vh;
+}
+.plus-circle,
+.minus-circle{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
 }

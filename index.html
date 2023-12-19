@@ -14,12 +14,58 @@
         <a href="#menu"><div>Menu</div></a>
         <a href="#about"><div>About</div></a>
       </div>
-      <div class="cart">
-        <div class="cart-text">Cart</div>
+      <div class="cart" >
+        <div class="cart-text" onclick="showCart();">Cart</div>
         <div class="cart-quantity"></div>
       </div>
     </nav>
     <main>
+      <div class="cart-box">
+        <div class="cart-box-heading">Wow! Your Cart Looks Tasty</div>
+        <div class="cart-box-elements">
+
+          <div class="cart-box-elements-item">
+            <div class="cart-box-elements-item-imageContainer">
+              <img class="cart-box-elements-item-image" src="images/bbqchicken.jpg" alt="">
+            </div>
+            <div class="cart-box-elements-item-itemdetails">
+              <div class="cart-box-elements-item-name">Name of the Pizza</div>
+              <div class="cart-box-elements-item-price">Price-₹999</div>
+              <div class="cart-box-elements-item-quantity">Quantity-1</div>
+              <div class="cart-box-elements-item-finalamount">
+                <div class="cart-item-finalprice">₹4532</div>
+                <div class="cart-item-addremove">
+                  <div class="cart-item-add"><i class="plus-circle"  data-lucide="plus-circle"></i>
+                    <i class="minus-circle" data-lucide="minus-circle"></i></div>
+                  <div><button class="cart-item-remove">Remove Item</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-box-elements-item">
+            <div class="cart-box-elements-item-imageContainer">
+              <img class="cart-box-elements-item-image" src="images/bbqchicken.jpg" alt="">
+            </div>
+            <div class="cart-box-elements-item-itemdetails">
+              <div class="cart-box-elements-item-name">Name of the Pizza</div>
+              <div class="cart-box-elements-item-price">Price-₹999</div>
+              <div class="cart-box-elements-item-quantity">Quantity-1</div>
+              <div class="cart-box-elements-item-finalamount">
+                <div class="cart-item-finalprice">₹4532</div>
+                <div class="cart-item-addremove">
+                  <div class="cart-item-add"><i class="plus-circle"  data-lucide="plus-circle"></i>
+                    <i class="minus-circle" data-lucide="minus-circle"></i></div>
+                  <div><button class="cart-item-remove">Remove Item</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="cart-total">This will contain total</div>
+      </div>
       <div class="main-top" id="home">
         <div class="main-text">
           <div class="main-text-heading">
@@ -145,5 +191,6 @@
     <script src="script/pizzaitems.js"></script>
     <script src="script/pizzareviews.js"></script>
     <script src="script/homepage.js"></script>
+    <script src="script/cart.js"></script>
   </body>
 </html>
