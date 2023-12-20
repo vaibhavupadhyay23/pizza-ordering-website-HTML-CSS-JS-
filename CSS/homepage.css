@@ -306,10 +306,11 @@ footer {
   height: 100vh;
   right: 0px;
   width: 30vw;
+  visibility: hidden;
   opacity: 0;
   background-color: #f0ead2;
   border-radius: 20px;
-  transition: opacity 1s;
+  transition: opacity .5s;
 }
 .cart-box-heading,
 .cart-box-elements-item-name{
@@ -320,8 +321,10 @@ footer {
 }
 .cart-box-elements{
   margin-top: 2vh;
-  max-height: 50%;
+  max-height: 60%;
   background-color: whitesmoke;
+  overflow: scroll;
+  scroll-behavior: smooth;
 }
 .cart-box-elements-item{
   display: flex;

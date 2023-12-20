@@ -82,3 +82,5 @@ const pizzaItems = [
 ]
 
 let cartQuantity=JSON.parse(localStorage.getItem('cartQuantity')) || [];
+
+let cartQuantityObjects = [];

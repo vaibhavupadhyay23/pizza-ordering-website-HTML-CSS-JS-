@@ -15,7 +15,7 @@ function menuItemsHTML() {
     <div class="item-description">${pizzaitem.productDescription}</div>
     <div class="item-rating">⭐${pizzaitem.productRatings}</div>
     <div class="item-price">₹${pizzaitem.productPrice}</div>
-    <button class="item-order-button" onclick="cartUpdateQuantity(${pizzaitem.productId});">Order Now</button>
+    <button class="item-order-button" onclick="cartUpdateQuantity(${pizzaitem.productId}); loadcartQuantityObjects(); displayCartItems();">Order Now</button>
   </div>`
   });
  
@@ -41,6 +41,8 @@ function cartUpdate(){
   let cartQuantityElement = document.querySelector('.cart-quantity');
   if(cartQuantityLength){
     cartQuantityElement.style.opacity=1;
+  } if(cartQuantityLength===0){
+    cartQuantityElement.style.opacity=0;
   }
   cartQuantityElement.innerHTML=cartQuantityLength;
 
@@ -54,5 +56,6 @@ function cartUpdateQuantity(id){
   localStorage.setItem('cartQuantity',JSON.stringify(cartQuantity));
   cartUpdate();
   console.log(cartQuantity);
+  cartHeadingElement();
 }
 
