@@ -15,7 +15,7 @@ function menuItemsHTML() {
     <div class="item-description">${pizzaitem.productDescription}</div>
     <div class="item-rating">⭐${pizzaitem.productRatings}</div>
     <div class="item-price">₹${pizzaitem.productPrice}</div>
-    <button class="item-order-button" onclick="cartUpdateQuantity(${pizzaitem.productId}); loadcartQuantityObjects(); displayCartItems();">Order Now</button>
+    <button class="item-order-button" onclick="cartUpdateQuantity(${pizzaitem.productId}); loadcartQuantityObjects(); displayCartItems(); cartHeadingElement(); cartTotalAmount();">Order Now</button>
   </div>`
   });
  
@@ -56,6 +56,5 @@ function cartUpdateQuantity(id){
   localStorage.setItem('cartQuantity',JSON.stringify(cartQuantity));
   cartUpdate();
   console.log(cartQuantity);
-  cartHeadingElement();
 }
 

@@ -8,6 +8,7 @@
   </head>
   <body>
     <nav class="nav-bar" id="nav-bar">
+
       <a href="#home"><div class="website-name">ProPizza <i data-lucide="pizza"></i></div></a>
       <div class="menu-items">
         <a href="#home"><div>Home</div></a>
@@ -15,8 +16,8 @@
         <a href="#about"><div>About</div></a>
       </div>
       <div class="cart" >
-        <div class="cart-text" onclick="showCart();">Cart</div>
-        <div class="cart-quantity"></div>
+        <div class="cart-text" onclick="showCart();">Cart<div class="cart-quantity"></div></div>
+        
       </div>
     </nav>
     <main>
@@ -64,7 +65,11 @@
 
 
         </div>
-        <div class="cart-total">This will contain total</div>
+        <div class="cart-total">
+          <div class="cart-total-heading">You Cart Total</div>
+          <div class="cart-total-amount"></div>
+          <button class="place-the-order">Place the Order</button>
+        </div>
       </div>
       <div class="main-top" id="home">
         <div class="main-text">

@@ -2,6 +2,7 @@ let cartvisibility=0;
 loadcartQuantityObjects();
 displayCartItems();
 cartHeadingElement();
+cartTotalAmount();
 function showCart(){
  if (cartvisibility===0){
   document.querySelector('.cart-box').style.visibility='visible';
@@ -45,7 +46,7 @@ function displayCartItems(){
             <div class="cart-item-addremove">
               <div class="cart-item-add"><i class="plus-circle"  data-lucide="plus-circle"></i>
                 <i class="minus-circle" data-lucide="minus-circle"></i></div>
-              <div><button class="cart-item-remove" onclick="removeItem(${i});">Remove Item</button></div>
+              <div><button class="cart-item-remove" onclick="removeItem(${i}); cartTotalAmount();">Remove Item</button></div>
             </div>
           </div>
         </div>
@@ -69,8 +70,21 @@ function removeItem(index){
 function cartHeadingElement(){
   let cartnumber = cartQuantity.length;
   if(!cartnumber){
-    document.querySelector('.cart-box-heading').innerText='Wow! So Empty!'
+    document.querySelector('.cart-box-heading').innerText='Wow! So Empty!';
+    document.querySelector('.cart-total').style.visibility='hidden';
   } else {
-    document.querySelector('.cart-box-heading').innerText='Wow! Your Cart Looks Tasty'
+    document.querySelector('.cart-box-heading').innerText='Wow! Your Cart Looks Tasty';
+    document.querySelector('.cart-total').style.visibility='visible';
   }
+}
+
+function cartTotalAmount(){
+  let totalCartValue = 0
+  let i=0
+  cartQuantityObjects.forEach(element => {
+    i=element.productPrice*1000
+    totalCartValue += i;
+  });
+  totalCartValue=totalCartValue/1000;
+  document.querySelector('.cart-total-amount').innerText=`₹${totalCartValue}`;
 }
